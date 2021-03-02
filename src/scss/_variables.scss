@@ -1,0 +1,27 @@
+@import 'swiper/swiper-bundle.css';
+
+.swiper-container {
+ width: 600px;
+ height: 300px;
+}
+
+img {
+ @extend .swiper-container
+}
+
+.swiper-slide{
+ background: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
+}
+
+.swiper-button-next{
+background-color: aliceblue;
+color:black;
+}
+
+.swiper-button-prev{
+ @extend .swiper-button-next
+}
