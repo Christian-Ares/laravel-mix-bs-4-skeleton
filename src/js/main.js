@@ -6,7 +6,6 @@ import SwiperCore, { Navigation } from 'swiper/core'
 
 SwiperCore.use([Navigation])
 
-
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
