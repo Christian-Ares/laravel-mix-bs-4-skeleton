@@ -26,7 +26,3 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-// swiper.slideNext(500, true);
-// swiper.slidePrev(500, true);
-// swiper.animating(true);
