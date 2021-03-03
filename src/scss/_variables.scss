@@ -5,8 +5,51 @@
  height: 300px;
 }
 
+.buttons{
+ position: absolute;
+ left: 500px;
+ bottom: 50px;
+ display: flex;
+ flex-direction: row;
+}
+
 img {
  @extend .swiper-container
+}
+
+span{
+ position: absolute;
+ z-index: 3;
+ color: white;
+}
+
+.ex1 {
+ z-index: 6;
+ position: relative;
+ width: 1000px;
+ display: flex;
+ justify-content: space-between;
+ margin: 0 auto;
+ border: 2px solid white;
+ bottom: 10px;
+ background-color: white;
+}
+
+.ex2{
+width: 160px;
+position: relative;
+top: 0;
+border: 5px solid #ccc;
+float: left;
+margin: 5px;
+-webkit-transition: top 0.5s ease-out;
+-moz-transition: top 0.5s ease-out;
+-ms-transition: top 0.5s ease-out;
+transition: top 0.5s ease-out;
+}
+
+.ex1 .ex2:hover{
+ top: -20px;
 }
 
 .swiper-slide{
@@ -20,20 +63,31 @@ img {
 .swiper-button-next{
 background-color: aliceblue;
 color:black;
+margin: 20px;
+width: 15px;
+height: 30px;
+font-size: 10px;
+}
+
+.swiper-button-next:after{
+ font-size: 20px;
 }
 
 .swiper-button-prev{
  @extend .swiper-button-next
 }
 
-.slides-hover{
- position: relative;
- z-index: 5;
- top: 50%;
- left: 40%;
- background-color: aquamarine;
- width: 300px;
- height: 50px;
- border: solid 10px black;
-
+.swiper-wrapper span{
+ animation-duration: 3s;
+ animation-name: slidein;
+}
+@keyframes fade-in {
+ from {
+   margin-left: 100%;
+   width: 300%
+ }
+ to {
+   margin-left: 0%;
+   width: 100%;
+ }
 }

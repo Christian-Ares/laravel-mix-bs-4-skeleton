@@ -15,14 +15,18 @@ const swiper = new Swiper('.swiper-container', {
   spaceBetween: 0,
   direction: 'horizontal',
   loop: true,
-  effect: 'cube',
   allowSlideNext: true,
   allowSlidePrev: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 });
 
-swiper.slideNext(500, true);
-swiper.slidePrev(500, true);
+// swiper.slideNext(500, true);
+// swiper.slidePrev(500, true);
+// swiper.animating(true);
